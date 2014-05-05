@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.auth_google
+
+[report]
+omit = */tests/*

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record id="nereid_website_google" model="ir.ui.view">
+            <field name="model">nereid.website</field>
+            <field name="inherit" ref="nereid.website_view_form"/>
+            <field name="name">nereid_website_form</field>
+        </record>
+    </data>
+</tryton>

@@ -1,0 +1,18 @@
+language: python
+python:
+  - 2.7
+install:
+  - pip install flake8
+  - python setup.py install
+  - pip install coveralls
+script:
+  - python setup.py test
+  - coverage run setup.py test
+  - flake8 .
+after_success:
+  coveralls
+notifications:
+  email:
+  - ci-notify@openlabs.co.in
+env:
+  - GOOGLE_APP_ID=8567610268-21i2093k2f00ab3tvhtpruf5k8l65oan.apps.googleusercontent.com GOOGLE_APP_SECRET=46lahsBCpnkzCb-Qw2mAfJgE
