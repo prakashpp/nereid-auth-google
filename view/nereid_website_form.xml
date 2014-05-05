@@ -1,0 +1,10 @@
+<data>
+    <xpath expr="/form/notebook" position="inside">
+        <page string="Google Configuration" id="google">
+            <label name="google_app_id" />
+            <field name="google_app_id" />
+            <label name="google_app_secret" />
+            <field name="google_app_secret" />
+        </page>
+    </xpath>
+</data>
